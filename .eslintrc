@@ -1,0 +1,19 @@
+{
+    "extends": ["@audentio/standard", "prettier", "prettier/react"],
+    "rules": {
+        "operator-linebreak": ["off"],
+        "import/no-dynamic-require": "off",
+        "react/destructuring-assignment": "off",
+        "react/button-has-type": "off",
+        "no-else-return": ["warn", { "allowElseIf": true }],
+        "import/no-webpack-loader-syntax": "off"
+    },
+    "overrides": [
+        {
+            "files": ["cypress/**"],
+            "rules": {
+                "spaced-comment": "off"
+            }
+        }
+    ]
+}
