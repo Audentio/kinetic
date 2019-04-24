@@ -14,7 +14,7 @@ const { createWebpackConfig } = require('./common');
 const { parseConfigValue } = require('../config-helper');
 
 const CSP = require(path.join(PATHS.base, '/server/CSP'));
-const { DISABLE_CSP, SERVER_PORT, webpack_hardsource_ignore, webpack_hardsource } = require(path.join(
+const { DISABLE_CSP, SERVER_PORT, buildConfig = {} } = require(path.join(
     PATHS.base,
     '/config/application'
 ));
@@ -31,20 +31,20 @@ module.exports = createWebpackConfig(
 
         // eval doesnt play nice with react error boundries
         // also required for vscode debugger
-        devtool: 'eval-source-map',
+        devtool: buildConfig.devtool || 'eval-source-map',
 
         entry: path.join(PATHS.src, 'index.tsx'),
 
         context: resolve(process.cwd(), 'src'),
-
+        
         plugins: [
             // Enable HMR
             new webpack.HotModuleReplacementPlugin(),
 
             // reference third-party modules from DLL
             // makes dev bundle smaller and faster to build
-            webpack_hardsource && new HardSourceWebpackPlugin(),
-            webpack_hardsource &&
+            buildConfig.hardsource && new HardSourceWebpackPlugin(),
+            buildConfig.hardsource &&
                 new HardSourceWebpackPlugin.ExcludeModulePlugin(
                     [
                         {
@@ -53,7 +53,7 @@ module.exports = createWebpackConfig(
                         {
                             test: /@sentry/,
                         },
-                    ].concat(webpack_hardsource_ignore || [])
+                    ].concat(buildConfig.hardsource_ignore || [])
                 ),
         ],
 
