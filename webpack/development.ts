@@ -14,7 +14,7 @@ const { createWebpackConfig } = require('./common');
 const { parseConfigValue } = require('../config-helper');
 
 const CSP = require(path.join(PATHS.base, '/server/CSP'));
-const { DISABLE_CSP, SERVER_PORT, buildConfig = {} } = require(path.join(
+const { DISABLE_CSP, SERVER_PORT, PORT, buildConfig = {} } = require(path.join(
     PATHS.base,
     '/config/application'
 ));
@@ -60,7 +60,7 @@ module.exports = createWebpackConfig(
         devServer: {
             hot: true,
 
-            port: SERVER_PORT,
+            port: PORT || SERVER_PORT,
 
             // Accessible from local network
             host: '0.0.0.0',
