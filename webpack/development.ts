@@ -57,6 +57,10 @@ module.exports = createWebpackConfig(
                 ),
         ],
 
+        watchOptions: {
+            ignored: /node_modules/
+        },
+
         devServer: {
             hot: true,
 
