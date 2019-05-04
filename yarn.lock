@@ -1103,54 +1103,54 @@
   dependencies:
     core-js "^2.5.7"
 
-"@sentry/browser@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.npmjs.org/@sentry/browser/-/browser-5.1.1.tgz#f2bd3ac3d242c7aa670e4f02293d6808d60ff481"
-  integrity sha512-a8RCE+Ej7cHP+1BLlxMaa5BofILlojXdjBvA0bwbXsr5ZCVLLL6d0UB1FCW1oUg32NriZpCxD06iolUa+iRG8Q==
+"@sentry/browser@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/@sentry/browser/-/browser-5.1.2.tgz#9f1022c9f6390855a7b642b0c8445065f58c7ba2"
+  integrity sha512-Dxa90/Nfgr1sjdabSvnvJlRoLweuV/kv2iWJc1CO252FNncLxZCSSdl0mgltOiKmsxj+hS5oECHgXmqMnl8LCQ==
   dependencies:
-    "@sentry/core" "5.1.0"
+    "@sentry/core" "5.1.2"
     "@sentry/types" "5.1.0"
-    "@sentry/utils" "5.1.0"
+    "@sentry/utils" "5.1.2"
     tslib "^1.9.3"
 
-"@sentry/core@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/@sentry/core/-/core-5.1.0.tgz#c2a5522593cf8fe07c1da8d6af8d5fbaff3300df"
-  integrity sha512-i7kDqpJuSv4FBs3UvexPvt8Tr1jrbJqHxMeWKoURbMd4btd/sgv7lCXLKOuiRVy2V2IZ3NAPiCikVqK2rEdKKA==
+"@sentry/core@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/@sentry/core/-/core-5.1.2.tgz#e03eb85baf959c8458662942d5acfacb2e7b4c99"
+  integrity sha512-JA4iUJuL+6SqzbIpibqVRYqhlclDnoS6sb4wu5jBHubPSFkQZauvJial85mCugWjgaIa8+8aY+PLjT1lIsz0fA==
   dependencies:
-    "@sentry/hub" "5.1.0"
-    "@sentry/minimal" "5.1.0"
+    "@sentry/hub" "5.1.2"
+    "@sentry/minimal" "5.1.2"
     "@sentry/types" "5.1.0"
-    "@sentry/utils" "5.1.0"
+    "@sentry/utils" "5.1.2"
     tslib "^1.9.3"
 
-"@sentry/hub@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/@sentry/hub/-/hub-5.1.0.tgz#edcff4b85c10e6f44c603202da23776af36aeca0"
-  integrity sha512-gz46z4u65Uywn9ZrSuWNDJRjBgllA1pqov27fhdSPu5yvSr7dwdUCKO/5pvuXNQrBl79OxKzsXwUySX/9p5M1g==
+"@sentry/hub@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/@sentry/hub/-/hub-5.1.2.tgz#ffdb47cd35fbf8ace66d5c251754bea8ee5f901d"
+  integrity sha512-5UNyxpvb1Bl+iZ6MBZazoKZ8jkAX88/Z7smlK+nvVxSKvKbmAptIEHYm9xeRkBNg7mj4OFoQvcUgbapwAbbcZw==
   dependencies:
     "@sentry/types" "5.1.0"
-    "@sentry/utils" "5.1.0"
+    "@sentry/utils" "5.1.2"
     tslib "^1.9.3"
 
-"@sentry/minimal@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/@sentry/minimal/-/minimal-5.1.0.tgz#7892908c70d4f9f85b79eb861e561b82a170bfc2"
-  integrity sha512-+TySfvc6DiZ/06m5HePBNkIoDiWsRQClYWrVMysHRz1GzJhvWLmPdCikMXrfSZinlyrGIZGZAuNkd3LhmmtUrQ==
+"@sentry/minimal@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/@sentry/minimal/-/minimal-5.1.2.tgz#b2bf9c864f65f8c93fc7203e41e19208ce065411"
+  integrity sha512-StDUZA/OiXCjcRif6D51+iY97Tkqnyy+RHv5Udi+l4eKhMBpZ7nagMOXADA7eQ+XvWj/4mGbeVORPoOi/LGqTA==
   dependencies:
-    "@sentry/hub" "5.1.0"
+    "@sentry/hub" "5.1.2"
     "@sentry/types" "5.1.0"
     tslib "^1.9.3"
 
-"@sentry/node@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/@sentry/node/-/node-5.1.0.tgz#0f54610c140ca58460ced58c1937408ba0b5eb42"
-  integrity sha512-Bg48c/Zc5CUNHqPdzQfV7NySMHkJTvWxZZzR/kKVv9m7B9FIQ4bLyriLDpPOw8AMnZ0GO69WVEXiqdoZ3An2sg==
+"@sentry/node@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/@sentry/node/-/node-5.1.2.tgz#e79bf297f9fe61ddb74c0b61a3d60b116765f3a7"
+  integrity sha512-m6OT5QhSTt/l1+I00JVMdTB4MUtndB+I544W9dx94yS9NvUtfaH5SP+a26pD9ylVsbFqtmsygXXj15ofZ+HCPg==
   dependencies:
-    "@sentry/core" "5.1.0"
-    "@sentry/hub" "5.1.0"
+    "@sentry/core" "5.1.2"
+    "@sentry/hub" "5.1.2"
     "@sentry/types" "5.1.0"
-    "@sentry/utils" "5.1.0"
+    "@sentry/utils" "5.1.2"
     cookie "0.3.1"
     https-proxy-agent "2.2.1"
     lru_map "0.3.3"
@@ -1161,10 +1161,10 @@
   resolved "https://registry.npmjs.org/@sentry/types/-/types-5.1.0.tgz#2acda336c73c996b42ca03887679599c78751f10"
   integrity sha512-Uo5Fla1RjCfmliQWsV4ehZ1Q4z4taMC66ZGrqrUWx7FyQsaps+TJfQE5QiTIs+jWD6CbgVRf/N+pNMmpIK8JVA==
 
-"@sentry/utils@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/@sentry/utils/-/utils-5.1.0.tgz#15067fe64248948379518c23fe9949aae430cf78"
-  integrity sha512-p2W9Zg6IAtVFd2ejk850ixcv/01++eXA4y1t9YT+feocV3GyhHirz6aGFviPFGcOjSeAai+uuV2rvzFeLJtmkg==
+"@sentry/utils@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.npmjs.org/@sentry/utils/-/utils-5.1.2.tgz#f2b0ba7b97d01baafc705eed8f2b31005cb01e36"
+  integrity sha512-0KYr75d7SR28lx+s2ZbLBjdgKwVeJLxoX8l6fBxYGXkDiMaWfi4f6JOf4Wd96Mh4ZvdzVLLhOGkGak/HYKa7Yw==
   dependencies:
     "@sentry/types" "5.1.0"
     tslib "^1.9.3"
@@ -4095,10 +4095,10 @@ helmet-csp@2.7.1:
     dasherize "2.0.0"
     platform "1.3.5"
 
-helmet@3.16.0:
-  version "3.16.0"
-  resolved "https://registry.npmjs.org/helmet/-/helmet-3.16.0.tgz#7df41a4bfe4c83d90147c1e30d70893f92a9d97c"
-  integrity sha512-rsTKRogc5OYGlvSHuq5QsmOsOzF6uDoMqpfh+Np8r23+QxDq+SUx90Rf8HyIKQVl7H6NswZEwfcykinbAeZ6UQ==
+helmet@3.17.0:
+  version "3.17.0"
+  resolved "https://registry.npmjs.org/helmet/-/helmet-3.17.0.tgz#6348767c4ee8f273485ecd60476edcb490ef6125"
+  integrity sha512-3cJBDC9G4t2D/tcGfW7Y2pnbBSyAjYShtxTTg0wiXafkkGiK/GJyoCcHwux4kBHzG42nWE+IiXdsX0NtvhPuWw==
   dependencies:
     depd "2.0.0"
     dns-prefetch-control "0.1.0"
@@ -4113,7 +4113,7 @@ helmet@3.16.0:
     hsts "2.2.0"
     ienoopen "1.1.0"
     nocache "2.0.0"
-    referrer-policy "1.1.0"
+    referrer-policy "1.2.0"
     x-xss-protection "1.1.0"
 
 hide-powered-by@1.0.0:
@@ -6781,10 +6781,10 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
-referrer-policy@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/referrer-policy/-/referrer-policy-1.1.0.tgz#35774eb735bf50fb6c078e83334b472350207d79"
-  integrity sha1-NXdOtzW/UPtsB46DM0tHI1AgfXk=
+referrer-policy@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/referrer-policy/-/referrer-policy-1.2.0.tgz#b99cfb8b57090dc454895ef897a4cc35ef67a98e"
+  integrity sha512-LgQJIuS6nAy1Jd88DCQRemyE3mS+ispwlqMk3b0yjZ257fI1v9c+/p6SD5gP5FGyXUIgrNOAfmyioHwZtYv2VA==
 
 regenerate-unicode-properties@^8.0.2:
   version "8.0.2"
