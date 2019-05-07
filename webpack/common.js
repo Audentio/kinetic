@@ -8,14 +8,14 @@ const PATHS = require('../paths');
 
 const pkg = require(path.join(PATHS.base, 'package.json'));
 
-const postcss_loader = {
+const postcss_loader =  (postcss_plugins = []) => ({
     loader: 'postcss-loader',
     options: {
         ident: 'postcss',
         sourceMap: process.env.NODE_ENV === 'development',
-        plugins: () => [require('postcss-flexbugs-fixes'), require('autoprefixer')()],
+        plugins: () => [require('postcss-flexbugs-fixes'), require('autoprefixer')(), ...postcss_plugins],
     },
-};
+});
 
 const css_loader = __DEV__ => ({
     loader: 'css-loader',
@@ -44,21 +44,21 @@ const loaders = {
         ],
     },
 
-    css: ({ __DEV__, __BROWSER__, useStyleLoader }) => ({
+    css: ({ __DEV__, __BROWSER__, useStyleLoader, postcss_plugins }) => ({
         test: /\.css$/,
         use: [
             useStyleLoader && __BROWSER__ ? 'style-loader' : CssExtractPlugin.loader,
             css_loader(__DEV__),
-            postcss_loader,
+            postcss_loader(postcss_plugins),
         ],
     }),
 
-    scss: ({ __DEV__, __BROWSER__, useStyleLoader }) => ({
+    scss: ({ __DEV__, __BROWSER__, useStyleLoader, postcss_plugins }) => ({
         test: /\.scss$/,
         use: [
             useStyleLoader && __BROWSER__ ? 'style-loader' : CssExtractPlugin.loader,
             css_loader(__DEV__),
-            postcss_loader,
+            postcss_loader(postcss_plugins),
             {
                 loader: 'sass-loader',
                 options: {

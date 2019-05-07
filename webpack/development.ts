@@ -14,7 +14,7 @@ const { createWebpackConfig } = require('./common');
 const { parseConfigValue } = require('../config-helper');
 
 const CSP = require(path.join(PATHS.base, '/server/CSP'));
-const { DISABLE_CSP, SERVER_PORT, PORT, buildConfig = {} } = require(path.join(
+const { DISABLE_CSP, SERVER_PORT, PORT, DEVTOOL, buildConfig = {} } = require(path.join(
     PATHS.base,
     '/config/application'
 ));
@@ -25,13 +25,14 @@ module.exports = createWebpackConfig(
         __DEV__: true,
         __BROWSER__: true,
         useStyleLoader: true,
+        postcss_plugins: buildConfig.postcss_plugins
     },
     {
         mode: 'development',
 
         // eval doesnt play nice with react error boundries
         // also required for vscode debugger
-        devtool: buildConfig.devtool || 'eval-source-map',
+        devtool: DEVTOOL || 'eval-source-map',
 
         entry: path.join(PATHS.src, 'index.tsx'),
 
