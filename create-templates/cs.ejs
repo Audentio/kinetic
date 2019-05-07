@@ -1,0 +1,14 @@
+import React from 'react';
+import style from './<%- componentName %>.scss';
+
+type <%- componentName %>Props = {
+    children?: React.ReactNode;
+}
+
+export function <%- componentName %>(props: <%- componentName %>Props) {
+    return (
+        <div className={style.<%- componentName %>}>
+            <%- componentName %>
+        </div>
+    );
+}

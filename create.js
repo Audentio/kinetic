@@ -1,12 +1,19 @@
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
+const ejs = require('ejs');
 
 const args = process.argv.slice(2);
 
+function generateFromTemplate(cmd, variables) {
+    const template = fs.readFileSync(path.join(__dirname, `create-templates/${cmd}.ejs`), 'utf8');
+    
+    return ejs.render(template, variables);
+}
+
 function createComponent() {
-    if ((args[0] !== 'c' && args[0] !== 'cs') || !args[1]) {
-        console.log(chalk.yellow('invalid arguments'));
+    if (!args[1]) {
+        console.log(chalk.yellow('You must pass a second argument (component name)'));
         return;
     }
 
@@ -25,29 +32,17 @@ function createComponent() {
         return;
     }
 
-    // create
+    // create index
     fs.mkdirSync(componentPath);
-    console.log(path.join(componentPath, 'index.ts'));
-
     const componentIndex = `export * from './${componentName}';\n`;
     fs.writeFileSync(path.join(componentPath, 'index.ts'), componentIndex);
 
-    const componentFile = `import React, { Component } from 'react';
-${args[0] === 'cs' ? `import style from './${componentName}.scss';\n` : ''}
-export class ${componentName} extends Component<any> {
-    render() {
-        return (
-            <div>
-                helloworld
-            </div>
-        );
-    }
-}\n`;
-
+    // create component file
+    const componentFile = generateFromTemplate(args[0], { componentName })
     fs.writeFileSync(path.join(componentPath, `${componentName}.tsx`), componentFile);
 
-    if (args[0] === 'cs') {
-        // component with style
+    // create stylesheet if applicable
+    if (args[0] === 'cs' || args[0] === 'ccs') {
         fs.writeFileSync(path.join(componentPath, `${componentName}.scss`), '');
     }
 
@@ -70,12 +65,12 @@ function createUtil() {
     }
 
     // create util
-    fs.writeFileSync(path.join('./src/utils', `${utilName}.ts`), `export function ${utilName}() {\n}`);
+    fs.writeFileSync(path.join('./src/utils', `${utilName}.ts`), `export function ${utilName}() {\n}\n`);
 
-    console.log(`created src/components/${utilName}`);
+    console.log(`created src/utils/${utilName}`);
 }
 
-if (args[0] === 'c' || args[0] === 'cs') {
+if (['c','cs', 'cc', 'ccs'].indexOf(args[0]) > -1) {
     createComponent();
 }
 
