@@ -13,7 +13,12 @@ const postcss_loader =  (postcss_plugins = []) => ({
     options: {
         ident: 'postcss',
         sourceMap: process.env.NODE_ENV === 'development',
-        plugins: () => [require('postcss-flexbugs-fixes'), require('autoprefixer')(), ...postcss_plugins],
+        plugins: () => [
+            require('postcss-flexbugs-fixes')(), 
+            require('autoprefixer')(), 
+            require('postcss-css-variables')(), 
+            ...postcss_plugins
+        ],
     },
 });
 

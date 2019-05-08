@@ -1,6 +1,6 @@
 {
   "name": "@audentio/kinetic",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "React build tools",
   "repository": {
     "type": "git",
@@ -51,6 +51,7 @@
     "lodash": "^4.17.11",
     "node-sass": "4.12.0",
     "path-to-regexp": "3.0.0",
+    "postcss-css-variables": "^0.12.0",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
     "prettier": "^1.17.0",
