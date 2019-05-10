@@ -1,6 +1,6 @@
 {
   "name": "@audentio/kinetic",
-  "version": "1.3.9",
+  "version": "1.3.10",
   "description": "React build tools",
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "compression": "1.7.4",
     "core-js": "3.0.1",
     "css-loader": "2.1.1",
+    "cssnano": "^4.1.10",
     "dotenv": "^8.0.0",
     "ejs": "2.6.1",
     "eslint-config-prettier": "^4.2.0",

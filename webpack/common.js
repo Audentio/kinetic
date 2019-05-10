@@ -17,6 +17,7 @@ const postcss_loader =  (postcss_plugins = []) => ({
             require('postcss-flexbugs-fixes')(), 
             require('autoprefixer')(), 
             require('postcss-css-variables')(), 
+            require('cssnano')({ preset: 'default' }),
             ...postcss_plugins
         ],
     },
