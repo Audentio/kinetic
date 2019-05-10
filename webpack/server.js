@@ -32,7 +32,7 @@ module.exports = createWebpackConfig(
         },
 
         // tell webpack to not bundle these
-        externals: ['express', 'ejs', 'node-fetch'].reduce((externals, mod) => {
+        externals: ['express', 'ejs', 'node-fetch', 'purifycss', 'uglify-js'].reduce((externals, mod) => {
             // eslint-disable-next-line
             externals[mod] = `commonjs ${mod}`;
             return externals;
