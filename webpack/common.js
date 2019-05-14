@@ -37,9 +37,6 @@ const loaders = {
     js: {
         test: /\.(js|jsx|ts|tsx)$/,
 
-        // ignore node_modules, except @audentio scoped modules
-        exclude: /node_modules\/(?!(@audentio)\/).*/,
-
         use: [
             {
                 loader: 'babel-loader',
