@@ -150,6 +150,7 @@ const createWebpackConfig = (flags, $config) => {
         },
 
         resolve: {
+            mainFields: ['main', 'module'],
             extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
             modules: [PATHS.node_modules, PATHS.src, PATHS.base],
         },
