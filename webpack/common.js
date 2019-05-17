@@ -33,6 +33,7 @@ const css_loader = __DEV__ => ({
     },
 });
 
+const transpileModules = /@audentio/;
 const loaders = {
     js: {
         test: /\.(js|jsx|ts|tsx)$/,
@@ -40,6 +41,12 @@ const loaders = {
         use: [
             {
                 loader: 'babel-loader',
+                exclude: modulePath => {
+                    if (modulePath.indexOf('node_modules') === -1) return false;
+                    if (transpileModules.test(modulePath)) return false;
+
+                    return true;
+                },
                 query: {
                     cacheDirectory: true,
                 },
