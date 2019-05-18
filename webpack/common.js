@@ -157,7 +157,7 @@ const createWebpackConfig = (flags, $config) => {
         },
 
         resolve: {
-            mainFields: ['main', 'module'],
+            mainFields: flags.__BROWSER__ ? ['browser', 'main', 'module'] : ['main', 'module'],
             extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
             modules: [PATHS.node_modules, PATHS.src, PATHS.base],
         },
