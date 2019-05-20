@@ -10,16 +10,11 @@ const { createWebpackConfig } = require('./common');
 const __BROWSER__ = true;
 const __DEV__ = process.env.NODE_ENV === 'development';
 
-const { buildConfig = {} } = require(path.join(
-    PATHS.base,
-    '/config/application'
-));
-
-module.exports = createWebpackConfig(
+module.exports = (options = {}) => createWebpackConfig(
     {
         __DEV__,
         __BROWSER__,
-        postcss_plugins: buildConfig.postcss_plugins
+        ...options,
     },
     {
         optimization: {

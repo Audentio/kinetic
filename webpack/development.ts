@@ -14,18 +14,18 @@ const { createWebpackConfig } = require('./common');
 const { parseConfigValue } = require('../config-helper');
 
 const CSP = require(path.join(PATHS.base, '/server/CSP'));
-const { DISABLE_CSP, SERVER_PORT, PORT, DEVTOOL, buildConfig = {} } = require(path.join(
+const public_config = require(path.join(PATHS.base, '/config/public'));
+const { DISABLE_CSP, SERVER_PORT, PORT, DEVTOOL } = require(path.join(
     PATHS.base,
     '/config/application'
 ));
-const public_config = require(path.join(PATHS.base, '/config/public'));
 
-module.exports = createWebpackConfig(
+module.exports = (options = {}) => createWebpackConfig(
     {
         __DEV__: true,
         __BROWSER__: true,
         useStyleLoader: true,
-        postcss_plugins: buildConfig.postcss_plugins
+        ...options,
     },
     {
         mode: 'development',
@@ -44,8 +44,8 @@ module.exports = createWebpackConfig(
 
             // reference third-party modules from DLL
             // makes dev bundle smaller and faster to build
-            buildConfig.hardsource && new HardSourceWebpackPlugin(),
-            buildConfig.hardsource &&
+            options.hardsource && new HardSourceWebpackPlugin(),
+            options.hardsource &&
                 new HardSourceWebpackPlugin.ExcludeModulePlugin(
                     [
                         {
@@ -54,7 +54,7 @@ module.exports = createWebpackConfig(
                         {
                             test: /@sentry/,
                         },
-                    ].concat(buildConfig.hardsource_ignore || [])
+                    ].concat(options.hardsource_ignore || [])
                 ),
         ],
 

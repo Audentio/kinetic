@@ -8,17 +8,17 @@ const PATHS = require('../paths');
 
 const pkg = require(path.join(PATHS.base, 'package.json'));
 
-const postcss_loader =  (postcss_plugins = []) => ({
+const postcss_loader = (postcss_plugins = []) => ({
     loader: 'postcss-loader',
     options: {
         ident: 'postcss',
         sourceMap: process.env.NODE_ENV === 'development',
         plugins: () => [
-            require('postcss-flexbugs-fixes')(), 
-            require('autoprefixer')(), 
-            require('postcss-css-variables')(), 
+            require('postcss-flexbugs-fixes')(),
+            require('autoprefixer')(),
+            require('postcss-css-variables')(),
             require('cssnano')({ preset: 'default' }),
-            ...postcss_plugins
+            ...postcss_plugins,
         ],
     },
 });
@@ -63,7 +63,7 @@ const loaders = {
         ],
     }),
 
-    scss: ({ __DEV__, __BROWSER__, useStyleLoader, postcss_plugins }) => ({
+    scss: ({ __DEV__, __BROWSER__, useStyleLoader, sass_resources, postcss_plugins }) => ({
         test: /\.scss$/,
         use: [
             useStyleLoader && __BROWSER__ ? 'style-loader' : CssExtractPlugin.loader,
@@ -78,7 +78,7 @@ const loaders = {
             {
                 loader: 'sass-resources-loader',
                 options: {
-                    resources: [path.resolve(PATHS.src, 'theme.scss')],
+                    resources: sass_resources || [path.resolve(PATHS.src, 'theme.scss')],
                 },
             },
         ],
@@ -123,7 +123,7 @@ const loaders = {
 };
 
 // merge passed config with defaults
-const createWebpackConfig = (flags, $config) => {
+const createWebpackConfig = (options, $config) => {
     const { module = {}, plugins = [], stats, output, ...config } = $config;
     return {
         ...config,
@@ -131,7 +131,7 @@ const createWebpackConfig = (flags, $config) => {
         stats: {
             timings: true,
             chunks: false,
-            colors: flags.__DEV__,
+            colors: options.__DEV__,
             version: true,
 
             entrypoints: false,
@@ -153,11 +153,13 @@ const createWebpackConfig = (flags, $config) => {
 
         module: {
             ...module,
-            rules: [loaders.js, loaders.css(flags), loaders.scss(flags), ...loaders.files].concat(module.rules || []),
+            rules: [loaders.js, loaders.css(options), loaders.scss(options), ...loaders.files].concat(
+                module.rules || []
+            ),
         },
 
         resolve: {
-            mainFields: flags.__BROWSER__ ? ['browser', 'main', 'module'] : ['main', 'module'],
+            mainFields: options.__BROWSER__ ? ['browser', 'main', 'module'] : ['main', 'module'],
             extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
             modules: [PATHS.node_modules, PATHS.src, PATHS.base],
         },
@@ -172,8 +174,8 @@ const createWebpackConfig = (flags, $config) => {
         plugins: [
             new webpack.DefinePlugin({
                 __VERSION__: `'${pkg.version}'`,
-
-                ...flags,
+                __BROWSER__: options.__BROWSER__,
+                __DEV__: options.__DEV__,
             }),
 
             process.env.ANALYZE && new BundleAnalyzerPlugin(),
