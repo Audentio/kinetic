@@ -7,7 +7,9 @@
     "url": "https://github.com/Audentio/kinetic.git"
   },
   "scripts": {
-    "release": "release-it"
+    "release": "release-it",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Audentio",
   "license": "ISC",
@@ -80,9 +82,11 @@
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1",
     "webpack-stats-plugin": "0.2.1",
-    "yarn": "^1.16.0"
+    "yarn": "^1.16.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "release-it": "^12.2.0"
-  }
+  },
+  "snyk": true
 }
