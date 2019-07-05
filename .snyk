@@ -1,0 +1,104 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - react-hot-loader > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - node-sass > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - hard-source-webpack-plugin > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/core > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - sass-resources-loader > async > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - react-universal-component > react-hot-loader > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-plugin-transform-imports > babel-types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/core > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > eslint-plugin-import > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > eslint > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - fast-async > @babel/generator > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > eslint > inquirer > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/core > @babel/helpers > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @types/babel__core > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - fast-async > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > eslint > table > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-plugin-universal-import > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - webpack-bundle-analyzer > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/core > @babel/traverse > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/traverse > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/preset-env > @babel/plugin-transform-function-name > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/generator > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__traverse > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helpers > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/preset-env > @babel/plugin-transform-object-super > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-05T06:17:33.567Z'
+    - '@babel/preset-env > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2019-07-05T06:17:33.567Z'
