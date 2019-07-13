@@ -1,13 +1,15 @@
 {
   "name": "@audentio/kinetic",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "React build tools",
   "repository": {
     "type": "git",
     "url": "https://github.com/Audentio/kinetic.git"
   },
   "scripts": {
-    "release": "release-it"
+    "release": "release-it",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Audentio",
   "license": "ISC",
@@ -80,9 +82,11 @@
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2",
     "webpack-stats-plugin": "0.3.0",
-    "yarn": "^1.17.3"
+    "yarn": "^1.17.3",
+    "snyk": "^1.192.5"
   },
   "devDependencies": {
     "release-it": "^12.3.3"
-  }
+  },
+  "snyk": true
 }
