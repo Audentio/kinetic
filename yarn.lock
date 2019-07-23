@@ -2,11 +2,12 @@
 # yarn lockfile v1
 
 
-"@audentio/eslint-config-standard@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@audentio/eslint-config-standard/-/eslint-config-standard-2.2.0.tgz#3b928275a96b8f95db3dd5afb3343e353d9dbf3a"
-  integrity sha512-pO+2oa/LCEaGvrz/Pyl9ENShX7JuYvUywTuMZ/JVcaQvHCO5tpi+6jyEayZkUx28pi9Ohuq5nsNqXyaVykSZRQ==
+"@audentio/eslint-config-standard@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/@audentio/eslint-config-standard/-/eslint-config-standard-2.2.1.tgz#73f535076e314b24c7b8b42a0ae6105d052b12f8"
+  integrity sha512-/HEdeYhlvYt7jU8VIvTPFXaVF0yzcJO4CZ6YilxybMfrFuuEs0lEcg/a/0KlP6e82b4qFIRhyRg7lalbE8JbKg==
   dependencies:
+    "@typescript-eslint/parser" "^1.13.0"
     babel-eslint "^10.0.2"
     eslint "^6.1.0"
     eslint-config-airbnb "^17.1.1"
@@ -1454,6 +1455,11 @@
   resolved "https://registry.npmjs.org/@types/debug/-/debug-4.1.4.tgz#56eec47706f0fd0b7c694eae2f3172e6b0b769da"
   integrity sha512-D9MyoQFI7iP5VdpEyPZyjjqIJ8Y8EDNQFIFVLOmeg1rI1xiHOChyUPMPRUVfqFCerxfE+yS3vMyj37F6IdtOoQ==
 
+"@types/eslint-visitor-keys@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
+  integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.npmjs.org/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -1523,7 +1529,7 @@
   resolved "https://registry.npmjs.org/@types/yargs/-/yargs-12.0.12.tgz#45dd1d0638e8c8f153e87d296907659296873916"
   integrity sha512-SOhuU4wNBxhhTHxYaiG5NY4HBhDIDnJF60GU+2LqHAdKKer86//e4yg69aENCtQ04n0ovz+tq2YPME5t5yp4pw==
 
-"@typescript-eslint/experimental-utils@^1.13.0":
+"@typescript-eslint/experimental-utils@1.13.0", "@typescript-eslint/experimental-utils@^1.13.0":
   version "1.13.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/experimental-utils/-/experimental-utils-1.13.0.tgz#b08c60d780c0067de2fb44b04b432f540138301e"
   integrity sha512-zmpS6SyqG4ZF64ffaJ6uah6tWWWgZ8m+c54XXgwFtUv0jNz8aJAVx8chMCvnk7yl6xwn8d+d96+tWp7fXzTuDg==
@@ -1531,6 +1537,16 @@
     "@types/json-schema" "^7.0.3"
     "@typescript-eslint/typescript-estree" "1.13.0"
     eslint-scope "^4.0.0"
+
+"@typescript-eslint/parser@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-1.13.0.tgz#61ac7811ea52791c47dc9fd4dd4a184fae9ac355"
+  integrity sha512-ITMBs52PCPgLb2nGPoeT4iU3HdQZHcPaZVw+7CsFagRJHUhyeTgorEwHXhFf3e7Evzi8oujKNpHc8TONth8AdQ==
+  dependencies:
+    "@types/eslint-visitor-keys" "^1.0.0"
+    "@typescript-eslint/experimental-utils" "1.13.0"
+    "@typescript-eslint/typescript-estree" "1.13.0"
+    eslint-visitor-keys "^1.0.0"
 
 "@typescript-eslint/typescript-estree@1.13.0":
   version "1.13.0"
@@ -8657,10 +8673,10 @@ react-helmet-async@^1.0.2:
     react-fast-compare "2.0.4"
     shallowequal "1.1.0"
 
-react-hot-loader@4.12.8:
-  version "4.12.8"
-  resolved "https://registry.npmjs.org/react-hot-loader/-/react-hot-loader-4.12.8.tgz#90ecf2ef7d4005e110292760f135c95177e804c7"
-  integrity sha512-/Df2J3znMHzRzI6CW0dTOIWD2sjkVHxv56XCqujAo9mR+k2PVTiGjUgYBiGPGsix9zQzgCRfOKca93o9Zdj2vQ==
+react-hot-loader@4.12.9:
+  version "4.12.9"
+  resolved "https://registry.npmjs.org/react-hot-loader/-/react-hot-loader-4.12.9.tgz#cb2a85731ca38366b0e9e28e7fd1dbd7dcacc1ef"
+  integrity sha512-lWT3JpWUN7nGHSoI9c4MV+42ov79bd8aqwDzhoyKev3owIh+hbEivT6Mb81lCV6tWuqm9trKo2/Th2/YDhFCdw==
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
@@ -8668,7 +8684,7 @@ react-hot-loader@4.12.8:
     loader-utils "^1.1.0"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
-    shallowequal "^1.0.2"
+    shallowequal "^1.1.0"
     source-map "^0.7.3"
 
 react-hot-loader@^4.3.6:
@@ -9510,7 +9526,7 @@ shallow-clone@^1.0.0:
     kind-of "^5.0.0"
     mixin-object "^2.0.1"
 
-shallowequal@1.1.0, shallowequal@^1.0.2:
+shallowequal@1.1.0, shallowequal@^1.0.2, shallowequal@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
@@ -9672,14 +9688,14 @@ snyk-mvn-plugin@2.3.1:
     lodash "^4.17.13"
     tslib "1.9.3"
 
-snyk-nodejs-lockfile-parser@1.13.0:
-  version "1.13.0"
-  resolved "https://registry.npmjs.org/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.13.0.tgz#f3c81fd9a1870fdb5f71370e510d760326f3ee21"
-  integrity sha512-fC1o9SJ+iM+IYeBUYtvCIYh005WAvWMzqhEH3hI4zGPdCYQqGYIfVpXf29aCOKoorkTR345k5g6Etx54+BbrTQ==
+snyk-nodejs-lockfile-parser@1.15.0:
+  version "1.15.0"
+  resolved "https://registry.npmjs.org/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.15.0.tgz#836538d0214d2c5cb9621ab0a23146d1e8f12101"
+  integrity sha512-0Z41zCE8tsbc1QaEX0ZXwxh3TSOsS+BvsgnWZoZ7zZv9igCojEueQr+8Es/9Di8ol68ExmOEVD/ZOKAdG5Tgzg==
   dependencies:
     "@yarnpkg/lockfile" "^1.0.2"
     graphlib "^2.1.5"
-    lodash "^4.17.11"
+    lodash "^4.17.14"
     source-map-support "^0.5.7"
     tslib "^1.9.3"
     uuid "^3.3.2"
@@ -9760,14 +9776,15 @@ snyk-resolve@1.0.1, snyk-resolve@^1.0.0, snyk-resolve@^1.0.1:
     debug "^3.1.0"
     then-fs "^2.0.0"
 
-snyk-sbt-plugin@2.5.7:
-  version "2.5.7"
-  resolved "https://registry.npmjs.org/snyk-sbt-plugin/-/snyk-sbt-plugin-2.5.7.tgz#fb127619630906a081bbf2a75ea13b1141fd4906"
-  integrity sha512-nVGsYq/EZfSFzKaXJvUTqaf9phH5+EgZNN3ynN9Y54EO8Lh4Dljnd/gBIQzxHMI2joQDH4FMB3ojDZeiCkeQ1Q==
+snyk-sbt-plugin@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.npmjs.org/snyk-sbt-plugin/-/snyk-sbt-plugin-2.6.0.tgz#825010e960cd956f627b2788d538154b695a9f8a"
+  integrity sha512-a2NGX82rWkzGbgL9HZNACvGWR25SnPpCWw4aM+bDuSBYuWp/61oBz2DW1kI+pCP658FYjzDql7pmz0H+UPiwNA==
   dependencies:
     semver "^6.1.2"
     tmp "^0.1.0"
     tree-kill "^1.2.1"
+    tslib "^1.10.0"
 
 snyk-tree@^1.0.0:
   version "1.0.0"
@@ -9786,10 +9803,10 @@ snyk-try-require@1.3.1, snyk-try-require@^1.1.1, snyk-try-require@^1.3.1:
     lru-cache "^4.0.0"
     then-fs "^2.0.0"
 
-snyk@^1.196.0:
-  version "1.196.0"
-  resolved "https://registry.npmjs.org/snyk/-/snyk-1.196.0.tgz#ce529888f8b77459adad2a5726edf0ff65889752"
-  integrity sha512-Gv/N2mzAfh+9xhK72Z+ZDiKepQyE1NLF6S6WTLhoyxkvABUfnxgmfj7I6adn9AmLtMxMCqwo9neOdqQW1rLDYQ==
+snyk@^1.198.0:
+  version "1.198.0"
+  resolved "https://registry.npmjs.org/snyk/-/snyk-1.198.0.tgz#d1478bea6445779637d8f0944af87b6fadfcf827"
+  integrity sha512-BPSYjB/STm1QZHX/DmeHPzm7hJMLZTi31ZyusB3e/2vixGpOwf9PTn8sj+4qMG/TTEWF98RRWq03Xkz9CDuScw==
   dependencies:
     "@snyk/dep-graph" "1.10.0"
     "@snyk/gemfile" "1.2.0"
@@ -9816,14 +9833,14 @@ snyk@^1.196.0:
     snyk-gradle-plugin "2.12.5"
     snyk-module "1.9.1"
     snyk-mvn-plugin "2.3.1"
-    snyk-nodejs-lockfile-parser "1.13.0"
+    snyk-nodejs-lockfile-parser "1.15.0"
     snyk-nuget-plugin "1.10.0"
     snyk-php-plugin "1.6.3"
     snyk-policy "1.13.5"
     snyk-python-plugin "1.10.2"
     snyk-resolve "1.0.1"
     snyk-resolve-deps "4.0.3"
-    snyk-sbt-plugin "2.5.7"
+    snyk-sbt-plugin "2.6.0"
     snyk-tree "^1.0.0"
     snyk-try-require "1.3.1"
     source-map-support "^0.5.11"
@@ -10582,7 +10599,7 @@ tslib@1.9.3:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
 
-tslib@^1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1, tslib@^1.10.0, tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
@@ -11108,10 +11125,10 @@ webpack-stats-plugin@0.3.0:
   resolved "https://registry.npmjs.org/webpack-stats-plugin/-/webpack-stats-plugin-0.3.0.tgz#6952f63feb9a5393a328d774fb3eccac78d2f51b"
   integrity sha512-4a6mEl9HLtMukVjEPY8QPCSmtX2EDFJNhDTX5ZE2CLch2adKAZf53nUrpG6m7NattwigS0AodNcwNxlu9kMSDQ==
 
-webpack@^4.36.1:
-  version "4.36.1"
-  resolved "https://registry.npmjs.org/webpack/-/webpack-4.36.1.tgz#f546fda7a403a76faeaaa7196c50d12370ed18a9"
-  integrity sha512-Ej01/N9W8DVyhEpeQnbUdGvOECw0L46FxS12cCOs8gSK7bhUlrbHRnWkjiXckGlHjUrmL89kDpTRIkUk6Y+fKg==
+webpack@^4.37.0:
+  version "4.37.0"
+  resolved "https://registry.npmjs.org/webpack/-/webpack-4.37.0.tgz#3508ef10f7996612c2be6026076d89760f776f54"
+  integrity sha512-iJPPvL7XpbcbwOthbzpa2BSPlmGp8lGDokAj/LdWtK80rsPoPOdANSbDBf2GAVLKZD3GhCuQ/gGkgN9HWs0Keg==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
