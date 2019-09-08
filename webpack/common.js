@@ -27,9 +27,12 @@ const css_loader = __DEV__ => ({
     loader: 'css-loader',
     options: {
         sourceMap: __DEV__,
-        modules: true,
         importLoaders: 1,
-        localIdentName: __DEV__ ? '[local]___[hash:base64:8]' : '[hash:base64:8]',
+        modules: {
+            context: PATHS.src,
+            mode: 'local',
+            localIdentName: __DEV__ ? '[path][name]__[local]--[hash:base64:5]' : '[local]--[hash:base64:8]',
+        },
     },
 });
 
