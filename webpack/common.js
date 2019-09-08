@@ -31,7 +31,7 @@ const css_loader = __DEV__ => ({
         modules: {
             context: PATHS.src,
             mode: 'local',
-            localIdentName: __DEV__ ? '[path][name]__[local]--[hash:base64:5]' : '[local]--[hash:base64:8]',
+            localIdentName: __DEV__ ? '[name]__[local]--[hash:base64:5]' : '[local]--[hash:base64:8]',
         },
     },
 });
