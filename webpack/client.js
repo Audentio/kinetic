@@ -42,6 +42,7 @@ module.exports = (options = {}) => createWebpackConfig(
 
             minimizer: [
                 new TerserPlugin({
+                    extractComments: false,
                     sourceMap: true,
                     parallel: true,
                 }),
