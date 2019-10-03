@@ -120,3 +120,14 @@ patch:
         patched: '2019-07-13T06:38:39.816Z'
     - snyk > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-07-13T06:38:39.816Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:36:31.931Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:36:31.931Z'
+    - '@audentio/eslint-config-standard > snyk > proxy-agent > https-proxy-agent':
+        patched: '2019-10-03T23:36:31.931Z'
+    - '@audentio/eslint-config-standard > snyk > proxy-agent > pac-proxy-agent > https-proxy-agent':
+        patched: '2019-10-03T23:36:31.931Z'
+    - '@sentry/node > https-proxy-agent':
+        patched: '2019-10-03T23:36:31.931Z'
