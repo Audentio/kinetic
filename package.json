@@ -9,7 +9,7 @@
   "scripts": {
     "release": "release-it",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "author": "Audentio",
   "license": "ISC",
@@ -72,7 +72,7 @@
     "sass-loader": "^8.0.0",
     "sass-resources-loader": "2.0.1",
     "shhh": "1.0.3",
-    "snyk": "^1.244.0",
+    "snyk": "^1.258.2",
     "style-loader": "1.0.0",
     "stylelint-config-audentio": "^1.0.2",
     "stylelint-config-standard": "^19.0.0",
