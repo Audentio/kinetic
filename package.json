@@ -83,7 +83,7 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
     "webpack-stats-plugin": "0.3.0",
-    "yarn": "^1.19.1"
+    "yarn": "^1.21.1"
   },
   "devDependencies": {
     "release-it": "^12.4.3"
