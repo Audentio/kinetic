@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -120,3 +120,160 @@ patch:
         patched: '2019-07-13T06:38:39.816Z'
     - snyk > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-07-13T06:38:39.816Z'
+  SNYK-JS-LODASH-567746:
+    - '@babel/core > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - hard-source-webpack-plugin > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-plugin-transform-imports > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - fast-async > @babel/generator > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > eslint > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@babel/preset-env > @babel/plugin-transform-block-scoping > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - sass-resources-loader > async > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - fast-async > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/traverse > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > @babel/core > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/traverse > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-plugin-universal-import > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > eslint > inquirer > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > inquirer > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > eslint > table > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > snyk-config > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > snyk-mvn-plugin > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > snyk-nodejs-lockfile-parser > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > snyk-nuget-plugin > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@babel/preset-env > @babel/plugin-transform-modules-umd > @babel/helper-module-transforms > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - webpack-dev-server > portfinder > async > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/traverse > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > @snyk/dep-graph > graphlib > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > snyk-go-plugin > graphlib > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > snyk-nodejs-lockfile-parser > graphlib > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@babel/preset-env > @babel/plugin-transform-unicode-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__traverse > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/traverse > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-plugin-graphql-tag > babel-literal-to-ast > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/traverse > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - babel-jest > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - node-sass > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - webpack-bundle-analyzer > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
+    - '@audentio/eslint-config-standard > snyk > @snyk/dep-graph > lodash':
+        patched: '2020-04-30T23:38:12.091Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2020-04-30T23:38:12.091Z'
